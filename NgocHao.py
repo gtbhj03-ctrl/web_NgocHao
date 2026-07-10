@@ -1,7 +1,4 @@
 import streamlit as st
-
-st.title("Trang web đầu tiên của Bùi Ngọc Hào")
-import streamlit as st
 import os
 
 # Cấu hình giao diện trang web hiển thị rộng rãi, đẹp mắt
@@ -13,7 +10,7 @@ st.write("Ứng dụng chạy tự động giúp tra cứu nhanh công thức To
 DATA_FILE = "sotay_data.txt"
 
 # --- [DỮ LIỆU ĐƯỢC CHÈN SẴN THEO YÊU CẦU - KHÔNG BỎ SÓT] ---
-FILE_1_CONTENT = "KSKS {vql }xsnid_Z }xsnid_Z }xsnid_Z {vqlg }xsnid_Z }xsnid_Z }xsnid_Z |wrmhc^Y }xsnid_Z }xsnid_Z }xsnid_Z }xsnid_Z  & 6"
+FILE_1_CONTENT = "KSKS {vql }xsnid_Z }xsnid_Z }xsnid_Z {vqlg }xsnid_Z }xsnid_Z }xsnid_Z |wrmhc^Y }xsnid_Z }xsnid_Z }xsnid_Z }xsnid_Z  & 6"[cite: 1]
 
 FILE_2_CONTENT = """Các cấu trúc câu cơ bản và thông dụng được sử dụng nhiều trong tiếng Anh
 1. S + V + too + adj/adv + (for someone) + to do something: ( quá….để cho ai làm gì…)
@@ -36,7 +33,7 @@ e.g. It’s time for me to ask all of you for this question. (Đã đến lú
 e.g. It takes me 5 minutes to get to school. (Tôi mất 5 phút để đi học)
 e.g. It took him 10 minutes to do this exercise yesterday. (Anh ấy mất 10 phút để làm bài tập ngày hôm qua)
 8. To prevent/stop + someone/something + From + V-ing: ( ngăn cản ai/ cái gì… làm gì.. )
-e.g. He prevented us from parking our car here. (Anh ấy ngăn họ không được đỗ xe tại đây)
+e.g. He prevented us from parking our car here. (Anh ấy ngăn họ không được đỗ xe tại đây)
 9. S + find+ it+ adj to do something: ( thấy … để làm gì… )
 e.g. I find it very difficult to learn about English. (Tôi thấy quá khoe để học tiếng anh)
 e.g. They found it easy to overcome that problem. (Họ thấy vấn đề này quá dễ để vượt qua)
@@ -205,7 +202,7 @@ e.g. We stopped going out late. (Chúng tôi thôi không đi chơi khuya nữa)
 84. Let smb do smt ( Để ai làm gì )
 e.g. Let him come in. (Để anh ta vào)
 
-By Mr. Duy"""
+By Mr. Duy"""[cite: 2]
 
 # Hàm xử lý chuỗi ký tự xuống dòng để ghi gọn vào file text database
 def ma_hoa_noi_dung(text):
@@ -237,7 +234,7 @@ def doc_du_lieu():
                     danh_sach.append({
                         "loai": loai,
                         "tieu_de": tieu_de,
-                        "noi_dung": gia_ma_nol_dung(noi_dung_ma_hoa) if 'gia_ma_nol_dung' not in globals() else gia_ma_noi_dung(noi_dung_ma_hoa)
+                        "noi_dung": gia_ma_noi_dung(noi_dung_ma_hoa)
                     })
     return danh_sach
 
